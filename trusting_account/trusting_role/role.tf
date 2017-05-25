@@ -58,7 +58,7 @@ data "aws_iam_policy_document" "trusted-account-role-policy" {
 #}
 
 data "template_file" "json_policy" {
-  template = "${file("${path.root}/templates/${var.policy_name}.json")}"
+  template = "${file("${path.module}/templates/${var.policy_name}.json")}"
 }
 
 resource "aws_iam_policy" "cross-account-policy" {
