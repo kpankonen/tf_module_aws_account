@@ -1,8 +1,4 @@
-variable "users" {
-  type = "list"
-}
-
-variable "group_name" {
+variable "trusted_group_name" {
   type = "string"
 }
 
